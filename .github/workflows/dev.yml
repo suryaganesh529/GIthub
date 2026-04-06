@@ -1,0 +1,12 @@
+name: FEature dep
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feature
+jobs:
+  output:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display
+        run: echo "This is fetaure branch"
