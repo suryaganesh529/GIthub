@@ -1,9 +1,10 @@
 name: FEature dep
 on:
-  workflow_dispatch:
   push:
     branches:
       - feature
+  workflow_dispatch:
+        
 jobs:
   output:
     runs-on: ubuntu-latest
