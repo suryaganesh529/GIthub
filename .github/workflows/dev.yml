@@ -1,0 +1,12 @@
+name: Dev Workflow
+on:
+  push:
+    branches:
+      - dev
+  workflow_dispatch:
+jobs:
+  Output:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display
+        run: echo "This is dev branch"
